@@ -1,0 +1,106 @@
+$bottom-color: #4c9f70;
+$up-color: #331e38;
+$font-main: 'Nunito', sans-serif;
+.column-flex {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    margin: 0;
+    font-family: $font-main;
+}
+.header {
+    display: flex;
+    align-items: center;
+    /*Horizontal alignment*/
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: $up-color;
+    color: white;
+    top: 0px;
+}
+.header__img {
+    width: 200px;
+}
+.container {
+    @extend .column-flex;
+    background: linear-gradient($up-color, $bottom-color);
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
+    padding: 0px 30px;
+}
+.container__register {
+    @extend .column-flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255,255,0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 600px;
+    width: 300px;
+    
+}
+.container__register--form{
+    @extend .column-flex;
+}
+.input {
+    background: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid white;
+    font-family: $font-main;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+::placeholder {
+    color: white;
+}
+.button {
+    background-color: rgba(255, 255,255,0.1);
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: $font-main;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: $bottom-color;
+}
+.footer a {
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: overline;
+}
+.container__register {
+    font-size: 14px;
+}
+.container__register a {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.container__register a:hover{
+    text-decoration: overline;
+}
