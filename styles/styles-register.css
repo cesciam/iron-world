@@ -16,16 +16,16 @@ body {
 .header__img {
     width: 200px;
 }
-.login {
+.container {
     background: linear-gradient(#331e38, #4c9f70);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0px 30px;
     min-height: calc(100vh - 200px);
+    padding: 0px 30px;
 }
-.login__container {
+.container__register {
     background-color: rgba(255, 255,255,0.1);
     border: 2px solid white;
     border-radius: 40px;
@@ -37,49 +37,9 @@ body {
     justify-content: space-around;
     flex-direction: column;
 }
-.login__container--form {
+.container__register--form{
     display: flex;
     flex-direction: column;
-}
-.login__container--form label {
-    font-size: 14px;
-}
-.login__container--remember-me {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-.login__container--remember-me a{
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-}
-.login__container--remember-me a:hover{
-    text-decoration: underline;
-}
-/* The sign ">" means that all the children of type x of this class will have this class */
-.login__container--social-media > div{
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-.login__container--social-media > div >img{
-    width: 30px;
-    margin-right: 10px;
-}
-.login__container--register {
-    font-size: 14px;
-}
-.login__container--register a {
-    font-size: 16px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-.login__container--register a:hover {
-    text-decoration: underline;   
 }
 .input {
     background: transparent;
@@ -94,7 +54,7 @@ body {
     outline: none;
     height: 50px;
 }
-::placeholder{
+::placeholder {
     color: white;
 }
 .button {
@@ -125,5 +85,17 @@ body {
     text-decoration: none;
 }
 .footer a:hover {
+    text-decoration: overline;
+}
+.container__register {
+    font-size: 14px;
+}
+.container__register a {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.container__register a:hover{
     text-decoration: overline;
 }
